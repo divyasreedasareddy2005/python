@@ -7,7 +7,6 @@ print(my__list)
 
 valu =my__list.copy()
 print(valu)
-print
 print("hellow world")
 
 def login(username,pasword):
@@ -114,4 +113,4 @@ print(info(3))
 print(info(2))
 
 #with lambda 
-print((lambda num :"positive"if num >0 else "negative"  num <0)(10))
+print((lambda num :"positive"if num >0 else "negative")(10))

@@ -52,11 +52,11 @@ def employe_info(employe_name,employe_email,employe_location,company_name):
 employe_info(employe_location = "hyd",employe_name = "divya",employe_email ="divya@gmail.com",company_name ="meta")
 
 #arbitary positional arguements(*args)
-def add_all(*numbers)
+def add_all(*numbers):
     total = 0
     for num in numbers:
         total = total+num
-print(f"the total sum is {total}")
+    print(f"the total sum is {total}")
 add_all(10)
 
 #arbitary keywords arguments (**kwargs)

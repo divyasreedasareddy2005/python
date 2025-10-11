@@ -57,6 +57,7 @@ def add(la,lb,ga):
     print(la)
     print(lb)
     print(ga)
+    print(globals()["ga"])
 add(1,2,3)
 
 
@@ -114,3 +115,69 @@ print(info(2))
 
 #with lambda 
 print((lambda num :"positive"if num >0 else "negative")(10))
+
+##iile
+print((lambda a,b:a+b)(5,6))
+
+#without lambda
+
+def is_even(num):
+   if num%2==0:
+      return True
+   else:
+      return False
+print(is_even(5))
+
+#with lambda
+
+print((lambda num:num%2==0)(5))
+
+      
+      #
+
+def emp_info(emp_name,emp_email,emp_loc):
+   employee_details = {}
+   employee_details["emp_name"] = emp_name
+   employee_details["emp_email"] = emp_email
+   employee_details["emp_loc"] = emp_loc
+
+   return employee_details
+
+print(emp_info("Divya","divya@gmail.com","mydukur"))
+
+def emp_information(emp_name,emp_email,emp_loc):
+   print(f"emp_name : {emp_name},emp_loc = {emp_loc} , emp_email : {emp_email}")
+
+emp_information("Divya","divya@gmail.com","mydukur")
+
+def empl_info(emp_name,emp_email,emp_location,company_name="Edify"):
+   print(f"hi {emp_name},your email is {emp_email} and work location is {emp_location} and ur company name is {company_name}")
+   
+empl_info("divya","divya@gmail.com","mydukur")
+empl_info("sai","yaminio@gmail.com","mydukur")
+
+
+#without lambda
+def is_even(num):
+   if num%2==0:
+      return True
+   else:
+      return False
+print(is_even(5))
+print(is_even(10))
+
+#
+data = (1,2,3)
+def display(data):
+   for num in data:
+      if num % 2 == 0:
+        print ("even")
+      else:
+         print("odd")
+display(data)
+
+print((lambda num:num%2==0)(5))
+
+#
+emp_info =((lambda emp_name,emp_email,emp_location:print(f"hi {emp_name}, ur email is {emp_email} and ur location is {emp_location}"))("divya","divya@gmail.com","hyd"))
+emp_info

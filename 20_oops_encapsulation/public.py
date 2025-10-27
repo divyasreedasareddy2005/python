@@ -8,4 +8,3 @@ obj = A(10,20)
 
 print(obj.a)#accessible
 print(obj.b)#accessible
-

@@ -261,3 +261,91 @@ print(sum_list([3, 5, 6, 2]))
 #print(reduce(lambda result , num:result*num,[1,3,7]))NameError: name 'reduce' is not defind
 
 
+#studdent class
+
+class Student :
+
+   #class variable = class data is same for every student
+
+    #def __init__(self,student_name,student_id)
+    #self.student id =student_id
+    #self.student name = student_name
+
+   def __init__(self,student_id,student_name,student_age=none,student_email=none,student_mobile_number=none):
+       
+       #identity info
+      self.student_id = student_id
+      self.studenent_name=student_name
+      self.student_age=student_age
+      self.student_email=student_email
+      self.student_mobile_number=student_mobile_number
+
+      #calculate info
+      self.total_sessions_attended=0
+      self.attendance_credit=0
+      self.performance_credit=0
+      self.final_credit=0
+      self.trainer_rating=0
+
+   #however like functionalitys
+   def student_basic_info(self):
+      print(======="basic info"=======)
+      print(f"stiudent id :{student_id}")
+      print(f"student_name :{student_name}")
+
+
+   # click like functionality
+   def student_complete_info(self):
+      print(===="complete info"======)
+      print(f"student id :{student_id}")
+      print(f"student name :{student_name}")
+      print(f"student age :{student_age}")
+      print(f"student_email :{student_email}")
+      print(f"student mobile number :{student_mobile_number}")
+   #calculate student attendance
+   def session_credits_cal(self):
+       total_sessions_attended = int(input("enter total sessions attended"))
+       self.total_sesions_attended = total_sessions_attended
+
+      if total_sessions_attended>=30:
+         self.attendence_credits=+5
+      elif total_sessions_attended>=20:
+         self.attendance_credits=+3
+      else:
+         self.attendance_credits=0
+         return self.attendance_credits
+   #performance credits based on the score
+   def performance_credits_cal(self,score):
+      if score is >=90:
+         self.performance_credit=+5
+      elif score>=70:
+         self.performance_credit=+3
+      else:
+         self.performance_credits=0
+         return self.performance_credits
+      
+   #calculaye final credits based on above 
+   def achivement_status(self):
+      self.final_credits = self.session_credits_cal() +self.performance_credit_cal(95)
+
+      if final_credits>=10:
+         print("got gold")
+      elif final_credit>=8:
+         print("got silver")
+      else:
+         print("got bronze")
+         return self.final_credits
+   #trainer rating
+   def trainer_rating(self):
+      self.trainer_rating = int(input("enter trainer rating(1-5)"))
+
+      if trainer_rating>=5:
+         return 5000
+      else:
+         return 0
+      
+
+          
+       
+          
+      

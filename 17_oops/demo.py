@@ -18,7 +18,7 @@ class Student:
 
     #statements
     print(f"student name :{student_name}")
-    print("student email :",student_email)
+    print(f"student email :{student_email}")
     print("="*50)
 
 #function(out side the class)

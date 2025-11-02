@@ -4,8 +4,8 @@ class A :
         self._b = b #protected
         
 obj =  A(12,22)
-print(obj.a)#not accessible
-print(obj.b)# not accessible
+#print(obj.a)#not accessible
+#print(obj.b)# not accessible
 
 class A:
     def __init__(sel,a,b):
@@ -15,10 +15,10 @@ class B(A):
     def show(self):
         print("super")
 obj = B(22,33)
-obj.show()
+#obj.show()
 
 class A:
-    def __init__(sel,a,b):
+    def __init__(self,a,b):
         self._a = a 
         self._b = b 
 class B(A):
